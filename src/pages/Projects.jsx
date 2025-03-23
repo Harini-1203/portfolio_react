@@ -15,6 +15,8 @@ const m2 = "/assets/m2.png";
 const w1 = "/assets/w1.png";
 const mh1 = "/assets/mh1.png";
 const mh2 = "/assets/mh2.png";
+import { motion } from "framer-motion";
+
 
 
 
@@ -68,7 +70,17 @@ const projectsList = [
 const Projects = () => {
 
   return (
-    <div id="projects" className="z-100 flex border-box grid grid-cols-1 md:grid-cols-2 text-sm lg:grid-cols-3 px-40 gap-20 p-5">
+    <div className='z-200'>
+    <motion.h1
+        className="z-700 text-2xl font-bold text-[#8b60f7] mt-5 mb-10 text-center"
+        // initial={{ opacity: 0, y:-20 }}
+        // whileInView={{ opacity: 1, y: 0 }}
+        // viewport={{ amount: 0.5 }}
+        // transition={{ duration: 0.5 }}
+      >
+        Projects
+      </motion.h1>
+    <div id="projects" className="z-100 max:w-screen flex border-box grid grid-cols-1 md:grid-cols-2 text-sm lg:grid-cols-3 md:px-40 px-10 gap-20 p-5">
       {projectsList.map((project, index) => (
         <ProjectCard
           key={index}
@@ -79,6 +91,7 @@ const Projects = () => {
           github={project.github}
         />
       ))}
+    </div>
     </div>
   );
 };

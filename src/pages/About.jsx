@@ -10,12 +10,12 @@ const About = () => {
   return (
     // <></>
 
-    <div  className='flex w-screen w-screen h-inherit justify-start'>
-      <div className='lg:w-2/3 sm:w-3/4 relative lg:top-49 sm:top-50 sm:mr-5 '>
-        <img src="/assets/po.png" alt="profile"  ></img>/
+    <div  className='flex max:w-screen w-screen h-inherit md:p-0 p-10 justify-center md:justify-start'>
+      <div className='md:w-2/3 w-100 md:relative absolute md:left-0 left-55 lg:top-49 bottom-0  right-0 '>
+        <img src="/assets/po.png" alt="profile"  ></img>
       </div>
 
-      <div className='lg:w-6/7 sm:w-1/2 relative right-30 text-justify pd-10'>
+      <div className='lg:w-6/7  relative right-0 md:right-30 text-justify pd-10'>
       <div className=''>
       <h2 className="text-2xl font-bold text-[#8b60f7] pb-5 mt-10">
       <Typewriter

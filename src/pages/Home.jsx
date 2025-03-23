@@ -9,7 +9,7 @@ import Img from '../components/Img';
 const Home = () => {
   return (
     <>
-    <div className='flex relative items-center lg:gap-0 sm:gap-10  z-200 h-full w-full '>
+    <div className='flex relative items-center lg:gap-0   z-200 h-full w-screen '>
         <SocialIcons />
         <HomeText />
         <Img />

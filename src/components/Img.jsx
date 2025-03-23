@@ -8,7 +8,7 @@ const Img = () => {
     <motion.div 
       whileHover={{scale:1.03}}
 
-      className="relative md:w-[400px] md:h-[400px] sm:w-[300px] sm:h-[300px] flex justify-center items-center ">
+      className="relative  w-2/5 md:w-[400px] md:h-[400px] sm:w-[300px] sm:h-[300px] flex justify-center items-center ">
       {/* Background Shape */}
       <img 
         src="/assets/image.png"
@@ -20,7 +20,7 @@ const Img = () => {
       <img
         src="/assets/p.png"
         alt="Harini"
-        className="relative z-10 bottom-25 "
+        className="relative z-10 md:bottom-25 bottom-10 "
       />
     </motion.div>
   );

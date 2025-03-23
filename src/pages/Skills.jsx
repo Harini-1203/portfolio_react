@@ -1,5 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
+import SkillSec from "../components/skills/SkillSec";
+
 const html = "/assets/html.png";
 const css = "/assets/css.png";
 const js = "/assets/js.png";
@@ -12,8 +15,6 @@ const react = "/assets/react.svg";
 const mysql = "/assets/mysql.png";
 const git = "/assets/git.png";
 const github = "/assets/hithub.png";
-
-import SkillSec from "../components/skills/SkillSec"
 
 const languages = [
   { name: "Java", icon: java },
@@ -41,23 +42,25 @@ const version = [
 ];
 
 const Skills = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+
   return (
     <div className="z-200 w-full flex flex-col items-center justify-center">
       <motion.h1
         className="text-2xl font-bold text-[#8b60f7] mt-5 mb-10 text-center"
-        initial={{ opacity: 1, y: -20 }}
+        initial={{ opacity: 0, y: isMobile ? 0 : -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ amount: 0.5 }}
         transition={{ duration: 0.5 }}
       >
         Skills
       </motion.h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-30">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-30">
         <motion.div
           className="space-y-10"
-          initial={{ opacity: 0.5, x: -50 }}
+          initial={{ opacity: isMobile ? 1 : 0.5, x: isMobile ? 0 : -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{  amount: 0.7 }}
+          viewport={{ amount: 0.7 }}
           transition={{ duration: 0.8 }}
         >
           <SkillSec title="Frontend" skillList={languages} />
@@ -66,7 +69,7 @@ const Skills = () => {
 
         <motion.div
           className="space-y-10"
-          initial={{ opacity: 0.5, x: 50 }}
+          initial={{ opacity: isMobile ? 1 : 0.5, x: isMobile ? 0 : 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ amount: 0.7 }}
           transition={{ duration: 0.8 }}

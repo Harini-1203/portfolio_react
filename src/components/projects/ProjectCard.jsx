@@ -21,7 +21,7 @@ const ProjectCard = ({ title, desc, images, techstack, github }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ amount: 0.5, once: true }}
       transition={{ duration: 0.5 }}
-      className="cursor-pointer relative w-8/9 box-content max-h-79 pb-3 overflow-auto bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+      className="cursor-pointer relative md:w-8/9  w-[280px] box-content max-h-79 pb-3 overflow-auto bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
