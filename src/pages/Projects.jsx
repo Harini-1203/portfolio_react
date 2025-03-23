@@ -73,10 +73,10 @@ const Projects = () => {
     <div className='z-200'>
     <motion.h1
         className="z-700 text-2xl font-bold text-[#8b60f7] mt-5 mb-10 text-center"
-        // initial={{ opacity: 0, y:-20 }}
-        // whileInView={{ opacity: 1, y: 0 }}
-        // viewport={{ amount: 0.5 }}
-        // transition={{ duration: 0.5 }}
+        initial={{ opacity: 0, y:-20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ amount: 0.5 }}
+        transition={{ duration: 0.5 }}
       >
         Projects
       </motion.h1>
