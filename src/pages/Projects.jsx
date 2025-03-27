@@ -28,21 +28,21 @@ const projectsList = [
     img: [pet,pet1,pet2],
     desc: "PetLink connects pets with loving homes by enabling users to adopt, sell, or buy pets, promoting responsible ownership through a secure online platform.",
     techstack: ["ReactJS", "ExpressJs", "MongoDB"],
-    github: "https://github.com/yourusername/petlink"
+    github: "https://github.com/Harini-1203/petLink"
   },
   {
     title: "CodeIt-Chatbot",
     img: [chat,c1,c2],
     desc: "The CodeIt Chatbot provides instant, tailored code snippets for web development, enhancing efficiency and streamlining the coding process.",
     techstack: ["ReactJS", "NLTK"],
-    github: "https://github.com/yourusername/codeit-chatbot"
+    github: "https://github.com/Harini-1203/codeit-chatbot"
   },
   {
     title: "E-mandi",
     img: [emandi,m1,m2],
     desc: "E-MANDI is an online platform promoting transparent vegetable trading, connecting buyers and sellers to ensure fair pricing and combat inflation.",
     techstack: ["ReactJS", "ExpressJs", "MongoDB"],
-    github: "https://github.com/yourusername/e-mandi"
+    github: "https://github.com/Harini-1203/E-mandi"
   },
   {
     title: "Mental Health Chatbot",
@@ -56,14 +56,14 @@ const projectsList = [
     img: [w,w1],
     desc: "A project that retrieves and displays real-time weather forecasts by city using an external API.",
     techstack: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/yourusername/weather-forecast"
+    github: "https://github.com/Harini-1203/weather-update"
   },
   {
     title: "NoteKeeper",
     img: [note],
     desc: "Allows users to create, edit, organize, and manage personal notes efficiently.",
     techstack: ["ReactJS"],
-    github: "https://github.com/yourusername/notekeeper"
+    github: "https://github.com/Harini-1203/NoteKeeper"
   }
 ];
 
