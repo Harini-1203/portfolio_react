@@ -49,7 +49,7 @@ const projectsList = [
     img: [mhc,mh1,mh2],
     desc: "A chatbot offering initial mental health support via AI and connecting users to expert therapists.",
     techstack: ["ReactJS", "Streamlit", "Gemini-API Integration"],
-    github: "https://github.com/yourusername/mental-health-chatbot"
+    github: "https://github.com/Harini-1203/MindEase-chatbot"
   },
   {
     title: "Weather Forecast",
