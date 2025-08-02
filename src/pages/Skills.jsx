@@ -47,7 +47,7 @@ const Skills = () => {
   return (
     <div className="z-200 w-full flex flex-col items-center justify-center">
       <motion.h1
-        className="text-2xl font-bold text-[#8b60f7] mt-5 mb-10 text-center"
+        className="md:text-2xl text-lg font-bold text-[#8b60f7] mt-5 mb-10 text-center"
         initial={{ opacity: 0, y: isMobile ? 0 : -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ amount: 0.5 }}

@@ -21,7 +21,7 @@ const ProjectCard = ({ title, desc, images, techstack, github }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ amount: 0.5, once: true }}
       transition={{ duration: 0.5 }}
-      className="cursor-pointer relative md:w-8/9  w-[280px] box-content max-h-79 pb-3 overflow-auto bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+      className="cursor-pointer relative md:w-8/9  w-[250px] box-content max-h-79 pb-3 overflow-auto bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -30,7 +30,7 @@ const ProjectCard = ({ title, desc, images, techstack, github }) => {
         <img
           src={images[currentImage] || "https://via.placeholder.com/150"}
           alt={title}
-          className="w-full h-40 object-cover"
+          className="w-full md:h-40 h-25 object-cover"
         />
         {isHovered && images.length > 1 && (
           <>
@@ -52,11 +52,11 @@ const ProjectCard = ({ title, desc, images, techstack, github }) => {
 
       {/* Content Section */}
       <div className="p-5">
-        <h1 className="text-xl font-bold text-indigo-600">{title}</h1>
+        <h1 className="md:text-xl text-l font-bold text-indigo-600">{title}</h1>
 
         {/* Description Section */}
         <motion.div className={isHovered ? "hidden" : "block"}>
-          <p className="text-gray-600 mt-2">{desc}</p>
+          <p className="md:text-lg text-xs text-gray-600 mt-2">{desc}</p>
         </motion.div>
 
         {/* Tech Stack & GitHub (Visible on Hover) */}

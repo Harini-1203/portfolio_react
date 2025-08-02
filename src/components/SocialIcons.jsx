@@ -11,14 +11,14 @@ const SocialIcons = () => {
   ];
 
   return (
-    <div className="flex flex-col md:w-auto w-1/5 justify-center lg:ml-35 md:pr-30 px-10 md:px-20 gap-6 mt-4 text-2xl text-gray-800">
+    <div className="flex flex-col md:w-auto  justify-center lg:ml-35 md:pr-30 px-10 md:px-20 gap-6 mt-4 text-2xl text-gray-800">
       {socialLinks.map(({ href, icon, label }) => (
         <a
           key={label}
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-[#6126f6] transition-transform transform hover:scale-110"
+          className="hover:text-[#6126f6] md:text-4xl text-xl transition-transform transform hover:scale-110"
           aria-label={label}
         >
           {icon}

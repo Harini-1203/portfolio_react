@@ -10,14 +10,14 @@ const About = () => {
   return (
     // <></>
 
-    <div  className='flex max:w-screen w-screen h-inherit md:p-0 p-10 justify-center md:justify-start'>
-      <div className='md:w-2/3 w-100 md:relative absolute md:left-0 left-55 lg:top-49 bottom-0  right-0 '>
+    <div  className='flex md:w-screen w-auto h-inherit md:p-0 px-10  md:p-10 justify-center md:justify-start'>
+      <div className='md:w-2/3 w-80 md:relative absolute md:left-0  lg:top-49 bottom-0 left-45 right-0 '>
         <img src="/assets/po.png" alt="profile"  ></img>
       </div>
 
-      <div className='lg:w-6/7  relative right-0 md:right-30 text-justify pd-10'>
+      <div className='lg:w-6/7 w-auto relative right-0 md:right-30 text-justify '>
       <div className=''>
-      <h2 className="text-2xl font-bold text-[#8b60f7] pb-5 mt-10">
+      <h2 className="md:text-2xl md:px-0 px-10 text-xl font-bold text-[#8b60f7] pb-5 mt-10">
       <Typewriter
         words={['Passionate Developer', 'Tech Enthusiast']}
         loop
@@ -27,8 +27,8 @@ const About = () => {
         deleteSpeed={30}
         delaySpeed={1000}
       />
-    </h2>        <h4>I'm a full-stack developer with a strong foundation in MERN stack, Python, and Java. I enjoy building efficient, user-friendly applications and solving real-world problems with technology. Passionate about innovation, I continuously learn and refine my skills to create impactful digital solutions.</h4>
-        <div className='flex  p-5'>
+    </h2>        <h4 className='md:text-xl text-xs md:px-0 px-10' >I'm a full-stack developer with a strong foundation in MERN stack, Python, and Java. I enjoy building efficient, user-friendly applications and solving real-world problems with technology. Passionate about innovation, I continuously learn and refine my skills to create impactful digital solutions.</h4>
+        <div className='flex md:px-0 px-10  p-5'>
         <div className="flex flex-col items-center border-r-1 pr-10 transition-transform duration-300 hover:scale-102 cursor-pointer">
             <FaLaptopCode className="text-3xl text-indigo-500 transition-transform duration-300 hover:scale-110" />
             <span className="text-sm text-gray-600 mt-2">MERN Stack</span>
@@ -44,7 +44,7 @@ const About = () => {
           </div>  
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10 md:px-0 px-10">
       {/* Heading slides in from bottom */}
       <h3
         className="text-xl font-bold text-[#8b60f7] mb-4"
@@ -63,7 +63,7 @@ const About = () => {
 
         {/* Degree info fades in */}
         <motion.p
-          className="text-lg font-semibold"
+          className="md:text-lg text-s font-semibold"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.5 }}
@@ -75,7 +75,7 @@ const About = () => {
 
         {/* College name fades in */}
         <motion.p
-          className="text-gray-600"
+          className="text-gray-600 md:text-lg text-s"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.5 }}
@@ -88,7 +88,7 @@ const About = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.5 }}
         >
-          CGPA-8.7
+          CGPA-8.5
         </motion.p>
       </div>
     </div>

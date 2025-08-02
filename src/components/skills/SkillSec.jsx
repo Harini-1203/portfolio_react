@@ -11,8 +11,8 @@ const SkillSec = ({ title, skillList }) => {
   };
 
   return (
-    <div className="md:w-[460px] w-[320px]  bg-gray-50 rounded-xl p-5 shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer">
-      <h2 className="text-xl font-semibold mb-4 text-[#8b60f7]">{title}</h2>
+    <div className="md:w-[500px] w-auto md:mx-0  mx-10  border-[#8b60f7] z-50  border-1 rounded-xl md:py-5 py-2 md:px-5 px-3 shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+      <h2 className="md:text-2xl text-lg font-semibold mb-4 text-[#8b60f7]">{title}</h2>
       <div
         ref={carouselRef}
         onWheel={handleWheel}
@@ -21,7 +21,7 @@ const SkillSec = ({ title, skillList }) => {
         {skillList.map((skill, index) => (
           <div
             key={index}
-            className="md:min-w-[80px] md:w-auto w-20  bg-white p-4 rounded-xl shadow-md hover:shadow-xl mb-8 transition-shadow duration-300 group"
+            className="md:min-w-[80px] md:w-auto w-20  bg-white md:p-4 p-2 rounded-xl shadow-md hover:shadow-xl mb-8 transition-shadow duration-300 group"
           >
             <img
               src={skill.icon}

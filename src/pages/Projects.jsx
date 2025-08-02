@@ -72,7 +72,7 @@ const Projects = () => {
   return (
     <div className='z-200'>
     <motion.h1
-        className="z-700 text-2xl font-bold text-[#8b60f7] mt-5 mb-10 text-center"
+        className="z-700 md:text-2xl text-xl font-bold text-[#8b60f7] mt-5 mb-10 text-center"
         initial={{ opacity: 0, y:-20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ amount: 0.5 }}
@@ -80,7 +80,7 @@ const Projects = () => {
       >
         Projects
       </motion.h1>
-    <div id="projects" className="z-100 max:w-screen flex border-box grid grid-cols-1 md:grid-cols-2 text-sm lg:grid-cols-3 md:px-40 px-10 gap-20 p-5">
+    <div id="projects" className="z-100 max:w-screen flex border-box grid grid-cols-1 md:grid-cols-2 text-sm lg:grid-cols-3 md:px-40 px-10 md:gap-20 gap-10 p-5">
       {projectsList.map((project, index) => (
         <ProjectCard
           key={index}
